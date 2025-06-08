@@ -253,8 +253,8 @@ function initializeHubSpotForm() {
     if (window.hbspt) {
         window.hbspt.forms.create({
             region: "na1",
-            portalId: "YOUR_PORTAL_ID", // Replace with actual HubSpot Portal ID
-            formId: "YOUR_FORM_ID", // Replace with actual HubSpot Form ID
+            portalId: "242999486",
+            formId: "30c33fd0-8d8e-4d35-949d-2ade093e4b5d"
             target: "#hubspot-form"
         });
     }

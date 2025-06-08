@@ -40,13 +40,13 @@ Replace the placeholder values in `calculator.js` and `index.html`:
 
 ```javascript
 // In calculator.js, update:
-portalId: "YOUR_PORTAL_ID", // Replace with your HubSpot Portal ID
-formId: "YOUR_FORM_ID", // Replace with your HubSpot Form ID
+portalId: "242999486",
+formId: "30c33fd0-8d8e-4d35-949d-2ade093e4b5d"
 ```
 
 ```html
 <!-- In index.html, update: -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/YOUR_HUBSPOT_ID.js"></script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/242999486.js"></script>
 ```
 
 ### 2. Customization
