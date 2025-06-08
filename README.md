@@ -1,16 +1,17 @@
-# LinkedIn Ads Calculator - Factors.ai
+# LinkedIn Ads Calculator - Factors.ai (Next.js)
 
-A lead generation calculator that helps marketers determine the optimal LinkedIn audience size based on their campaign budget.
+A Next.js-powered lead generation calculator that helps marketers determine the optimal LinkedIn audience size based on their campaign budget.
 
 ## Features
 
+- **Modern React Architecture**: Built with Next.js for optimal performance
 - **Budget Input**: Supports both USD ($) and INR (₹) currencies
-- **Campaign Planning**: Input campaign duration, goals, and pricing models
+- **Real-time Calculations**: Uses React hooks for instant results
 - **Smart Calculations**: Uses industry-standard LinkedIn advertising formulas
 - **Audience Recommendations**: Provides optimal audience size ranges
 - **Performance Estimates**: Shows expected reach, frequency, and engagement
 - **Lead Capture**: Integrated HubSpot form for lead generation
-- **Responsive Design**: Works on desktop and mobile devices
+- **Responsive Design**: CSS modules for clean, maintainable styling
 
 ## How It Works
 
@@ -33,32 +34,117 @@ Audience Size = (Total Budget ÷ CPM) ÷ Desired Frequency
 - **Suggested Bid Range**: Recommended bidding range
 - **Insights & Tips**: Personalized optimization recommendations
 
-## Setup Instructions
+## Tech Stack
 
-### 1. HubSpot Integration
-Replace the placeholder values in `calculator.js` and `index.html`:
+- **Framework**: Next.js 14
+- **Styling**: CSS Modules
+- **Form Integration**: HubSpot Forms API
+- **Deployment**: Vercel-optimized
 
-```javascript
-// In calculator.js, update:
-portalId: "242999486",
-formId: "30c33fd0-8d8e-4d35-949d-2ade093e4b5d"
+## Development Setup
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/tanvijm/linkedin-ads-audience-size.git
+   cd linkedin-ads-audience-size
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Build Commands
+
+```bash
+# Development
+npm run dev
+
+# Production build
+npm run build
+
+# Start production server
+npm run start
+
+# Lint code
+npm run lint
+
+# Static export (for static hosting)
+npm run export
 ```
 
-```html
-<!-- In index.html, update: -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/242999486.js"></script>
+## HubSpot Integration
+
+The calculator is pre-configured with Factors.ai HubSpot credentials:
+
+- **Portal ID**: 242999486
+- **Form ID**: 30c33fd0-8d8e-4d35-949d-2ade093e4b5d
+
+The integration is handled in `components/HubSpotForm.js` using dynamic script loading.
+
+## Project Structure
+
+```
+├── components/
+│   ├── LinkedInCalculator.js    # Main calculator component
+│   └── HubSpotForm.js          # Lead capture form
+├── pages/
+│   ├── _app.js                 # Next.js app wrapper
+│   └── index.js                # Home page
+├── styles/
+│   ├── globals.css             # Global styles
+│   ├── Home.module.css         # Homepage styles
+│   ├── Calculator.module.css   # Calculator component styles
+│   └── HubSpotForm.module.css  # Form component styles
+├── package.json
+├── next.config.js              # Next.js configuration
+└── vercel.json                 # Vercel deployment config
 ```
 
-### 2. Customization
-- Update `style.css` to match your brand colors
-- Modify the Factors.ai branding in `index.html`
-- Adjust default rates and formulas in `calculator.js` if needed
+## Deployment
 
-### 3. Deployment
-Simply upload the files to your web server:
-- `index.html` - Main landing page
-- `calculator.js` - Calculator logic
-- `style.css` - Styling and responsive design
+### Vercel (Recommended)
+
+1. **Connect to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Import `tanvijm/linkedin-ads-audience-size`
+   - Vercel will auto-detect Next.js configuration
+
+2. **Deploy:**
+   - Framework: Next.js (auto-detected)
+   - Build Command: `npm run build` (auto-detected)
+   - Output Directory: `.next` (auto-detected)
+
+### Manual Deployment
+
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm run start
+
+# Or export static files
+npm run export
+```
 
 ## LinkedIn Advertising Benchmarks
 
@@ -76,6 +162,14 @@ The calculator uses these industry averages:
 - Firefox 60+
 - Safari 12+
 - Edge 79+
+
+## Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
 
 ## License
 
