@@ -19,6 +19,7 @@
   font-size: 1.5rem;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* Input Groups */
@@ -46,8 +47,8 @@
 .inputGroup input:focus,
 .inputGroup select:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #194D6F;
+  box-shadow: 0 0 0 3px rgba(25, 77, 111, 0.1);
 }
 
 .currencyInput {
@@ -75,7 +76,7 @@
 .calculateBtn {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #194D6F;
   color: white;
   border: none;
   border-radius: 8px;
@@ -87,7 +88,7 @@
 
 .calculateBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 25px rgba(25, 77, 111, 0.3);
 }
 
 .calculateBtn:active {
@@ -100,7 +101,7 @@
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 1rem;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #194D6F;
 }
 
 .resultCard h3 {

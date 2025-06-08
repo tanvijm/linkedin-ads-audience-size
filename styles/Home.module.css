@@ -6,7 +6,7 @@
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #194D6F;
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -15,13 +15,14 @@
 .header h1 {
   font-size: 1.8rem;
   font-weight: 600;
+  text-align: center;
 }
 
 /* Hero Section */
 .heroSection {
   text-align: center;
   padding: 4rem 0 2rem;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: #194D6F;
   color: white;
   margin-bottom: 3rem;
 }
@@ -30,7 +31,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 .subtitle {
@@ -38,6 +39,68 @@
   opacity: 0.9;
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* Info Section */
+.infoSection {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.infoCard {
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #194D6F;
+}
+
+.infoCard h2 {
+  color: #194D6F;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.infoContent {
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+.infoContent p {
+  margin-bottom: 1rem;
+}
+
+.infoContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infoContent li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.infoContent li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #194D6F;
+  font-weight: bold;
+}
+
+.infoContent strong {
+  color: #2d3748;
 }
 
 /* Footer */
@@ -61,5 +124,13 @@
   
   .container {
     padding: 0 15px;
+  }
+  
+  .infoCard {
+    padding: 1.5rem;
+  }
+  
+  .infoCard h2 {
+    font-size: 1.25rem;
   }
 }

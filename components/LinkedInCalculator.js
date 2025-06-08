@@ -75,27 +75,27 @@ const LinkedInCalculator = () => {
     const insights = [];
     
     if (results.audienceSize.max < 10000) {
-      insights.push("• Your audience size is quite targeted. Consider broader targeting if reach is limited.");
+      insights.push("Your audience size is quite targeted. Consider broader targeting if reach is limited.");
     } else if (results.audienceSize.min > 100000) {
-      insights.push("• Large audience size detected. Consider more specific targeting for better relevance.");
+      insights.push("Large audience size detected. Consider more specific targeting for better relevance.");
     } else {
-      insights.push("• Your audience size is in the optimal range for LinkedIn campaigns.");
+      insights.push("Your audience size is in the optimal range for LinkedIn campaigns.");
     }
 
     if (results.frequency < 2) {
-      insights.push("• Low frequency may limit campaign effectiveness. Consider increasing budget or reducing audience size.");
+      insights.push("Low frequency may limit campaign effectiveness. Consider increasing budget or reducing audience size.");
     } else if (results.frequency > 5) {
-      insights.push("• High frequency may lead to ad fatigue. Consider expanding your audience or reducing budget.");
+      insights.push("High frequency may lead to ad fatigue. Consider expanding your audience or reducing budget.");
     } else {
-      insights.push("• Frequency is optimal for brand awareness and engagement.");
+      insights.push("Frequency is optimal for brand awareness and engagement.");
     }
 
     if (results.estimatedClicks < 100) {
-      insights.push("• Expected clicks are low. Focus on compelling ad creative and precise targeting.");
+      insights.push("Expected clicks are low. Focus on compelling ad creative and precise targeting.");
     }
 
     if (results.dailyReach < 1000) {
-      insights.push("• Consider extending campaign duration to maximize reach efficiency.");
+      insights.push("Consider extending campaign duration to maximize reach efficiency.");
     }
 
     return insights;
